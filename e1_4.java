@@ -29,6 +29,10 @@ public class e1_4 {
         System.out.println("Ingrese un numero: ");
         int num2 = scanner.nextInt();
         
+        scanner.close();
+        
+        //se encuentra el numero mayor
+        
         if (num1 > num2){
             System.out.println(num1 + " Es mayor que " + num2);
         }

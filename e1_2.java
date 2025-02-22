@@ -22,9 +22,13 @@ public class e1_2 {
         
         Scanner scanner = new Scanner(System.in);
         
-        //variables
+        //Se pide el numero al usuario
         System.out.println("Ingrese un numero entero: ");
         int num = scanner.nextInt();
+        
+        scanner.close();
+        
+        //Se verifica el signo
         
         if (num < 0){
             System.out.print("El numero es negativo\n");

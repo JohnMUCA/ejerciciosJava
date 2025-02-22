@@ -34,6 +34,8 @@ public class e1_5 {
         System.out.println("Ingrese un ultimo numero entero: ");
         int num3 = scanner.nextInt();
         
+        scanner.close();
+        
         //Se verifica cual es el numero mayor
         
         

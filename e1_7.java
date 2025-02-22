@@ -29,6 +29,8 @@ public class e1_7 {
         System.out.println("Ingrese la temperatura del agua en grados celcius: ");
         float temperatura = scanner.nextFloat();
         
+        scanner.close();
+        
         //Verificar el estado del agua
         
         if (temperatura < 0.0){

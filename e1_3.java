@@ -26,6 +26,10 @@ public class e1_3 {
         System.out.println("Ingrese un numero entero: ");
         int num1 = scanner.nextInt();
         
+        scanner.close();
+        
+        
+        
         if (num1 > 0){
             System.out.println("Ingrese otro numero entero: ");
             int num2 = scanner.nextInt();
