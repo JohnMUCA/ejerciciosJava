@@ -18,7 +18,7 @@ public class e3_4 {
      */
     
     public static void main(String[] args) {
-        String cadena = "Hola";
+        String cadena = "Como te ves de linda concentrada.";
         
         rotulo(cadena);
     }
@@ -29,12 +29,24 @@ public class e3_4 {
         
         final short SCREEN_SIZE = 80;
         
-        for (short i = 0; i < SCREEN_SIZE; i++){
-            if ( (SCREEN_SIZE / 2 - cadena.length() / 2) < i && i < (SCREEN_SIZE / 2 - cadena.length() / 2) + cadena.length() ){
-                System.out.print(cadena.charAt(i - SCREEN_SIZE / 2));
-            }
-            else System.out.print(" ");
+        int espacios = (SCREEN_SIZE - cadena.length()) / 2;
+        
+        for (int i = 0; i < espacios; i++){
+            System.out.print(" ");
         }
+        
+        System.out.println(cadena);
+        
+        for (int j = 0; j < espacios; j++){
+            System.out.print(" ");
+        }
+        
+        for (int k = 0; k < cadena.length(); k++){
+            System.out.print("_");
+        }
+        
+        System.out.println("\n\n");
+        
         
     }
     
